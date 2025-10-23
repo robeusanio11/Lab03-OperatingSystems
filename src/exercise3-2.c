@@ -4,7 +4,7 @@
 int main(int argc, char*argv[]) {
     printf("location of code : %p\n", (void *)main);
     void *heap_memory = malloc(sizeof(int)); // Allocate memory
-    printf("location of heapt : %p\n", heap_memory);
+    printf("location of heap : %p\n", heap_memory);
     int x = 3;
     printf("location of stack : %p\n", (void *)&x);
 
