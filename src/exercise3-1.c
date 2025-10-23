@@ -5,18 +5,18 @@
 int main() {
     // #1 Allocating Memory for an Array of Integers
     int n = 5; // Size of the array
-    int *arr = malloc(n * sizeof(int)); // Allocate memory for 5 integers
+    int *arr = malloc(5 * sizeof(int)); // Allocate memory for 5 integers
 
     if (arr == NULL) {
         printf("Memory allocation failed!\n");
         return -1;
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 5; i++) {
         arr[i] = i; // Initialize array
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 5; i++) {
         printf("arr[%d] = %d ", i, arr[i]); // Print array values
     }
     printf("\n");
@@ -34,8 +34,8 @@ int main() {
         return 1;
     }
 
-    // This copies the null terminator into unallocated space (unsafe)
-    strcpy(str, temp);
+    
+    strcpy(str, temp);  // Copies characters + '\0' into unallocated space
 
     printf("Copied string: %s\n", str); // Might work, but unsafe
 
