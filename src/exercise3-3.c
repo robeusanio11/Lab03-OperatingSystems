@@ -27,7 +27,6 @@ int main() {
 
     for (int i = 3; i < 6; i++) {
         arr[i] = i + 1; // Initialize new elements
-        // CS 3750: Operating Systems I Lab 3
     }
 
     for (int i = 0; i < 6; i++) {
